@@ -1,33 +1,67 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: ECAW
 email: hello@ecaw.ltd
+url: http://ecaw.ltd
 description: > # this means to ignore newlines until "baseurl:"
   Provider of consultation and direct development for websites and software
   with a speciality in Ruby on Rails
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ecaw.ltd"
-twitter_username: IAmFledge
-github_username:  IAmFledge
+skills: "Ruby on Rails - Software Development - Product Development"
+meta_author: Edward Woodcock
+
+# Google webmaster tools
+# google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+# bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+contact-email: hello@ecaw.ltd
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+# disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 26547c
+  primary-rgb: "38,84,124"
+  secondary: ef476f
+  secondary-dark: 6D2133
+  text-dark-bg: fffcf9
+
+# Footer settings
+footer:
+  copyright: ECAW Ltd
+  location: London, UK
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/IAmFledge
+  - title: facebook
+    url: https://www.facebook.com/edwardwoodcock
+  # - title: stack-overflow
+  #   url: http://stackoverflow.com/questions/tagged/jekyll
+  # - title: bitbucket
+  #   url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/IAmFledge
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 20-22 Wenlock Road
+  - line: London, England, N1 7GU
+  - line: +44 (0)208 133 3812
+
+# Credits content
+# credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+permalink: pretty
